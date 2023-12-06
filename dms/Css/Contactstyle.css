@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* background: url(contact.png) no-repeat center; */
+    background-size: cover;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.contact-page {
+    width: 100%;
+    max-width: 1400px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.item {
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #322;
+    padding-left: 30px;
+}
+
+.icon {
+    background-color: #07350b;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.textb {
+    /* width: calc(50% - 10px); */
+    height: 50px;
+    padding: 12px;
+    background-color: rgb(48, 172, 85);
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    padding: 12px;
+    background-color: rgb(21, 153, 60);
+    border: none;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: auto;
+    background-color: #05350c;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* border: 2px solid #042209; */
+    transition: .3s linear;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #010407;
+}
+
+.btn1 {
+    /* margin-left: auto; */
+    background-color: #1a912b;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* border: 2px solid #c8ffd1; */
+    transition: .3s linear;
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: #010407;
+}
+
+@media screen and (max-width: 980px) {
+    .contact-page {
+        max-width: 800px;
+    }
+    h2 {
+        font-size: 45px;
+        margin-bottom: 40px;
+    }
+    .contact-info,
+    .contact-form {
+        flex: 100%;
+        margin-bottom: 30px;
+    }
+    .textb {
+        width: 100%;
+    }
+}
